@@ -29,7 +29,5 @@ $(document).ready(function() {
 		checkList.addRow.call(checkList, data);
 	});
 	formHandler.addInputHandler(Validation.isCompanyEmail);
-	formHandler.addInputHandlerCoffee(Validation.isValidableCoffee);
-	formHandler.addInputHandlerStrength(Validation.isValidableStrength);
 	window.myTruck = myTruck;
 })(window);

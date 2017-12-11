@@ -5,17 +5,6 @@
 	var Validation = {
 		isCompanyEmail: function (email) {
 			return /.+@gmail\.com$/.test(email);
-		},
-		isValidableCoffee: function(coffee) {
-			return /decaf/.test(coffee);
-		},
-		isValidableStrength: function(strength) {
-			if (strength > 20) {
-				return false;
-			}
-			else {
-				return true;
-			}
 		}
 	};
 

@@ -46,33 +46,7 @@
 				event.target.setCustomValidity('');
 			}
 			else {
-				message = emailAddress + ' is not an authorized email address!'
-				event.target.setCustomValidity(message);
-			}
-		});
-	}
-	FormHandler.prototype.addInputHandlerCoffee = function(fn) {
-		this.$formElement.on('input', '[name=coffee]', function(event) {
-			var coffee = event.target.value;
-			var message = '';
-			if (fn(coffee)) {
-				event.target.setCustomValidity('');
-			}
-			else {
-				message = coffee + ' is not in our menu!'
-				event.target.setCustomValidity(message);
-			}
-		});
-	}
-	FormHandler.prototype.addInputHandlerStrength = function (fn) {
-		this.$formElement.on('change', '[name=strength]', function(event) {
-			var strength = event.target.value;
-			var message = '';
-			if (fn(strength)) {
-				event.target.setCustomValidity('');
-			}
-			else {
-				message = strength + ' is too strong!'
+				message = emailAddress + ' is not an authorized email address! Only @gmail.com is accepted'
 				event.target.setCustomValidity(message);
 			}
 		});
